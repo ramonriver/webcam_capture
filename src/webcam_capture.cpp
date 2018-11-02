@@ -18,11 +18,9 @@ int main(int argc, char *argv[])
     cv::VideoCapture camera; //OpenCV video capture object
     cv::Mat image; //OpenCV image object
     cv::Mat gray_image;
-	int cam_id; //camera id . Associated to device number in /dev/videoX
-	cv::Scalar_<unsigned char> px_value; //pixel value (4-element vector)
-  //unsigned char i; //punter per canviar el pixel de la imatge
-  //unsigned char j; //punter per canviar el pixel de la imatge
-	int user_key; //user pressed key to quit
+	  int cam_id; //camera id . Associated to device number in /dev/videoX
+	  cv::Scalar_<unsigned char> px_value; //pixel value (4-element vector)
+	  int user_key; //user pressed key to quit
 
 	//check user args
 	switch(argc)
